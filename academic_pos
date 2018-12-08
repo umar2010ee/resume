@@ -1,0 +1,224 @@
+%-------------------------
+% Resume in Latex
+% Original Author : Sourabh Bajaj ; 
+% License : MIT
+% last update :  10 Oct 2018
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{#2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lfoot{\footnotesize {\textit{\today\ }}}
+%\cfoot{}
+%\rfoot{\footnotesize {\textit{\today\ }} }
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Huge Umar Muhammad Ali}} 
+  & \faMobile \  +1 470-318-9067 \\
+  & \href{mailto:umar2010ee@gatech.edu}{\faEnvelope\ umar2010ee@gatech.edu}\\
+  &   US CITIZEN
+  %%%%%% can fill something here below the name %%%
+   %\faLinkedinSquare\ umar2010ee 
+%   \small{The Local on 14th 455 14th ST NW, App\# 332 Atlanta, GA 30318} 
+
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Georgia Institute of Technology}{Atlanta, GA}
+      {Master of Science in Electrical and Computer Engineering  }{Aug 2018 -- PRESENT}
+    \resumeSubheading
+      {University of Engineering and Technology, Lahore}{Lahore, Pakistan}
+      {Bachelor of Science in Electrical Engineering;  GPA: 3.43}{Aug 2010 -- Jun 2014}
+  \resumeSubHeadingListEnd
+
+%%
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Mentor, A Siemens Business}{Lahore, Pakistan}
+      {Senior Software Development Engineer}{Dec 2014 - Jun 2018}
+      \resumeItemListStart
+        \resumeItem{}
+          {Worked in Automotive Network Division (AND) on \href{https://www.mentor.com/products/vnd/autosar-products/volcano-vstar} Volcano VSTAR product family.}
+        \resumeItem{}
+          {Contributed in the development and maintenance of an \href{https://www.autosar.org}{\textbf {AUTOSAR}} compliant OS kernel.}
+        \resumeItem{}
+          {Developed BSPs for various single and multicore SoC architectures.}
+        \resumeItem{}
+          {Contributed towards the ISO 26262 \href{https://en.wikipedia.org/wiki/Automotive_Safety_Integrity_Level}{\textbf{ASIL-D}} compliant  safety artifacts for VSTAR OS module.}
+        \resumeItem{}
+          {Training and mentoring new team members, code reviews, involvement in estimation and risk analysis of projects.}
+        \resumeItem{}
+          {Automated Testing and Continuous Integration using Jenkins and Gitlab.}
+        \resumeItem{}
+          {Provided Customer support to validate and resolve reported technical issues for certain EVBs and ECUs.}
+        \resumeItem{}
+          {Had experience of virtual AUTOSAR platforms ( AUTOSAR on Linux and on Windows).}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {NWN Lab at Al-Khawarizmi Institute of Computer Science(KICS)}{Lahore, Pakistan}
+      {Research Intern}{Oct 2013 - Jun 2014} 
+      \resumeItemListStart
+        \resumeItem{}
+          {Contributed in the project: \href{https://www.ignite.org.pk/component/tprojects/project/22.html} Multimodal Sensing Enabled Real-time Intelligent Wireless Camera Networks for Secure Spaces.}
+        \resumeItem{}
+          {Worked on techniques for visual detection, localization and tracking of event of interest through network of cameras.}
+        \resumeItem{}
+          {Had hands on experience of Embedded Linux and development of wireless distributed Camera Nodes - i.e. a BeagleBoard-xM platform running Embedded Linux for high performance image processing algorithms.}
+        \resumeItem{}
+          {Analysis and comparison of different techniques for visual tracking of moving objects.}
+        \resumeItem{}
+          {Had experience with low-level embedded programming on STM32-F4 Discovery and its on-board peripherals.}
+        \resumeItem{}
+          {Worked on algorithms for Acoustic source localization.}
+        \resumeItem{}
+          {Devised translational techniques for mapping of Direction of Arrival (DoA) to Camera’s Field Of View (FoV).}
+        \resumeItem{}
+          {Implemented and demonstrated a working prototype for a Real-time Intelligent Wireless Camera Network.}
+%        \resumeItem{}
+%          {Exploratory Study of \textsc{H.264} video compression standard and the feasibility of object tracking in the compressed domain.}
+          
+%        \resumeItem{}
+%          {Designed PCB for acoustic sensor nodes.}
+
+%        \resumeItem{Dev Environment}
+%          {Analytics environment based on docker and AWS, standardized the python and R dependencies. Wrote the core libraries that are shared by all data scientists.}
+%        \resumeItem{Data Warehousing}
+
+%%        \resumeItem{}
+%%          {Supported in development of hardware of acoustic sensor nodes.}
+      \resumeItemListEnd
+
+%    \resumeSubheading
+%      {Lucena Research}{Atlanta, GA}
+%      {Data Scientist}{Summer 2012 and 2013}
+%      \resumeItemListStart
+%        \resumeItem{Portfolio Management}
+%          {Created models for portfolio hedging,  portfolio optimization and price forecasting. Also creating a strategy backtesting engine used for simulating and backtesting strategies.}
+%        \resumeItem{QuantDesk}
+%          {Python backend for a web application used by hedge fund managers for portfolio management.}
+%      \resumeItemListEnd
+
+%    \resumeSubheading
+%      {Georgia Institute of Technology}{Atlanta, CA}
+%      {Research and Teaching Assistant}{Jan 2012 - Dec 2013}
+%      \resumeItemListStart
+%        \resumeItem{Research Assistant - Machine Learning}
+%          {Research on machine learning for portfolio hedging and replication algorithms. Modeling low-risk \& continuous-return strategies. Developed the python library QSTK.}
+%        \resumeItem{Teaching Assistant - Computational Investing}
+%          {The online course on Coursera, had more than 100,000 students enrolled. It was featured on the 11 Alive News and the Atlanta Journal Constitution. Involved in creating assignment, exams and conducting recitation sessions. Also taught the on-campus version of the course.}
+%      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Technical Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: \textsc{C/C++}, \textsc{Java}, Python, Assembly\textsc {(ARM, PowerPC)}, {HTML}}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+    }
+    \item{
+      \textbf{Tools \& Frameworks}{: Eclipse (with plugin dev), OpenCV, TensorFlow, Klocwork, Tortoise SVN, Embunit, Jenkins, GitLab, Makefile, Maven, Jira, Confluence}
+    }
+   \item{
+      \textbf{Debuggers}{: Lauterbauch Trace32, \textsc{IAR}, Keil uVision}
+    }
+   \item{
+      \textbf{Hardware Platforms}{: \textsc{Arm} Cortex-M/R/A, TriCore, \textsc{PowerPC}, RH850, BeagleBoard-xM, Raspberry Pi}
+    }
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Academic Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Maze Solver Robot for National Engineering Robotics Contest (\href{http://www.nerc.com.pk/}{NERC}): }
+      {Designed and built an autonomous maze solving robot using AVR ATmega32. Designed and incorporated ball-potting mechanism and color detection for the robot using discrete components.}
+    \resumeSubItem{Gaze controlled wheel chair for impaired persons: }
+      {Developed a prototype using a PC mount camera for gaze-tracking. Developed a C\# based desktop application to calibrate and control the motors by tracking user's gaze direction.}
+    \resumeSubItem{Genome Assembly: }
+      {Implemented a 4-ary tree, in Java, for identifying Deletions and then inserting them at appropriate locations in the Genome. Testcase consisted of: “Influenza Virus B, RNA segment \# 1” .}
+    \resumeSubItem{Minimal Shell: }
+      {Developed a program to implement some basic commands of Linux shell.}
+  \resumeSubHeadingListEnd
+
+% Try to put a footer %
+%-------------------------------------------
+\end{document}
